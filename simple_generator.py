@@ -2,7 +2,8 @@ def simple_gen():
     print('Checkpoint 1')
     yield 1
     print('Checkpoint 2')
-    yield  2
+    return 'No more elements' #Показывается при выбросе ошибки StopIteration: No more elements
+    yield  2 # при присутствии return, недостижимая операция
     print('Checkpoint 3')
 
 gen = simple_gen()

@@ -1,0 +1,3 @@
+class multifilter(filter):
+    pass
+
