@@ -13,6 +13,7 @@ class DoubleElementIterator:
 class MyList(list):
     def __iter__(self):
         return DoubleElementIterator(self)
+    #pass
 
 for pair in MyList([1,2,3,4,5,6]):
     print(pair)

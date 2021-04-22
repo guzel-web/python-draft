@@ -16,11 +16,12 @@
 
 def simple():
     a = 0
-    while a:
+    while True:
         a += 1
         yield a
 
-gen = simple(1)
+gen = simple()
+#print(gen)
 for i in gen:
     print(i, end = ' ')
 
